@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cinematic Genius 🎬</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Cinematic Genius 🎬</h1>
+    <input type="text" id="movieInput" placeholder="Enter a movie name...">
+    <button onclick="getRecommendations()">Get Recommendations</button>
+
+    <div id="results"></div>
+  </div>
+
+  <script>
+    async function getRecommendations() {
+      const movie = document.getElementById("movieInput").value.trim();
+      const resultsDiv = document.getElementById("results");
+      resultsDiv.innerHTML = "";
+
+      if (!movie) {
+        alert("Please enter a movie name.");
+        return;
+      }
+
+      try {
+        const response = await fetch(`/recommend?movie=${encodeURIComponent(movie)}`);
+        const data = await response.json();
+
+        if (data.error) {
+          resultsDiv.innerHTML = `<p>${data.error}</p>`;
+        } else {
+          data.recommendations.forEach(rec => {
+            const card = document.createElement("div");
+            card.className = "card";
+            card.innerHTML = `
+              <img src="${rec.poster}" alt="${rec.title}">
+              <h3>${rec.title}</h3>
+            `;
+            resultsDiv.appendChild(card);
+          });
+        }
+      } catch (err) {
+        resultsDiv.innerHTML = `<p>Something went wrong.</p>`;
+      }
+    }
+  </script>
+</body>
+</html>
