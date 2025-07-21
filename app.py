@@ -75,13 +75,32 @@ def fetch_movie_details(movie_id):
         )
 
 # --- RECOMMENDER LOGIC ---
+def get_tmdb_id(title):
+    search_url = f"https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query={title}"
+    response = requests.get(search_url)
+    data = response.json()
+    if data["results"]:
+        return data["results"][0]["id"]
+    else:
+        return None
+
 def recommend(movie):
     index = movies[movies['title'] == movie].index[0]
     distances = sorted(list(enumerate(similarity[index])), reverse=True, key=lambda x: x[1])
     recommendations = []
+
     for i in distances[1:11]:
-        movie_id = movies.iloc[i[0]].movie_id
-        recommendations.append(fetch_movie_details(movie_id))
+        title = movies.iloc[i[0]].title
+        tmdb_id = get_tmdb_id(title)
+        if tmdb_id:
+            details = fetch_movie_details(tmdb_id)
+            recommendations.append(details)
+        else:
+            recommendations.append((
+                "https://via.placeholder.com/200x300?text=No+Image",
+                title, "Unknown", "Unknown", "N/A", "No data found.",
+                "Cast not available", "N/A", "No tagline"
+            ))
     return recommendations
 
 # --- TITLE ---
