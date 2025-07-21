@@ -76,13 +76,20 @@ def fetch_movie_details(movie_id):
 
 # --- RECOMMENDER LOGIC ---
 def get_tmdb_id(title):
-    search_url = f"https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query={title}"
-    response = requests.get(search_url)
-    data = response.json()
-    if data["results"]:
-        return data["results"][0]["id"]
-    else:
+    url = f"https://api.themoviedb.org/3/search/movie?api_key={API_KEY}&query={title}"
+    response = requests.get(url)
+    
+    if response.status_code != 200:
+        st.error("Failed to fetch data from TMDb.")
         return None
+    
+    data = response.json()
+    if "results" not in data or not data["results"]:
+        st.warning(f"No TMDb results found for: {title}")
+        return None
+
+    return data["results"][0]["id"]
+
 
 def recommend(movie):
     index = movies[movies['title'] == movie].index[0]
