@@ -1,2 +1,1 @@
-# Cinematic Genius
 # CINEMATIC-GENIUS
