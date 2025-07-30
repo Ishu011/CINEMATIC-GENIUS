@@ -3,9 +3,12 @@
 
 **Cinematic-Genius-Movie-Recommender-System** is an advanced movie recommender system that harnesses the power of collaborative filtering and content-based filtering techniques to offer personalized movie suggestions. This application not only helps users discover new movies but also provides detailed information on each recommendation, including title, release date, rating, main characters, and posters. The system is powered by cutting-edge machine learning algorithms and integrates seamlessly with The Movie Database (TMDb) API for fetching up-to-date movie details.
 
-In addition to its robust recommendation capabilities, Cinematic Genius includes extensive customization features, allowing users to personalize the application's appearance to match their preferences. With options to adjust background colors, text colors, fonts, and overall style, users can create a viewing experience that feels uniquely theirs.
+<img width="1915" height="972" alt="image" src="https://github.com/user-attachments/assets/ae1d74f9-2d55-44d4-a454-53e7a24903c8" />
 
-## DEMO LINK : https://drive.google.com/file/d/10f8aYUoAyJuYis-icAcGA5iern9BuI6s/view?usp=sharing
+
+In addition to its robust recommendation capabilities, Cinematic Genius includes extensive customization features, allowing users to personalize the application's appearance to match their preferences. With options to adjust background colors, text colors, fonts, and overall style, users can create a viewing experience that feels uniquely theirs.
+## LIVE App Link : https://cinematic-genius-by-ishu-recommender-system.streamlit.app/
+## DEMO LINK : https://drive.google.com/file/d/18XQwXjBl3CqrpAS88Quzi_8Wcf6I8SjW/view?usp=sharing
 
 ## b) Features
 
@@ -23,8 +26,10 @@ In addition to its robust recommendation capabilities, Cinematic Genius includes
   - **Mode Features**: Includes a toggle for switching between different modes (e.g., Light Mode, Dark Mode) for varied visual experiences.
   - **Appearance Settings**: Accessible settings button to manage all appearance-related features in one place.
  
-  - ![Screenshot 2024-08-30 021543](https://github.com/user-attachments/assets/3ae8317d-5480-4c53-b798-58e7011c0cb2)
-  - ![Screenshot 2024-08-30 021652](https://github.com/user-attachments/assets/4a6dd1ba-8a7f-4213-aeb1-19d279bac497)
+<img width="1900" height="970" alt="image" src="https://github.com/user-attachments/assets/a10fc890-46ce-446e-a7b9-e71e1fdb4bd7" />
+
+<img width="1915" height="970" alt="image" src="https://github.com/user-attachments/assets/07914c1d-49d1-4fcd-bb4c-294d1672f8ec" />
+
 
 
 
@@ -101,7 +106,8 @@ streamlit run app.py
 
 ## k) Example Output
 
-![Screenshot 2024-08-30 021055](https://github.com/user-attachments/assets/2df36556-c567-4cd7-9b52-aa111349e162)
+<img width="805" height="568" alt="image" src="https://github.com/user-attachments/assets/41799ee2-fa08-4e81-9c52-f6e1c0b02dbe" />
+
 
 
 _A screenshot of the application showcasing movie recommendations, detailed movie information, and the customization settings panel._
