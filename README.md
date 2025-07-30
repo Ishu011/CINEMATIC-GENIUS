@@ -1,7 +1,7 @@
 # CINEMATIC GENIUS : Movie Recommender system
 ## a) Overview
 
-**Cinematic-Genius-Movie-Recommender-System** is an advanced movie recommender system that harnesses the power of collaborative filtering and content-based filtering techniques to offer personalized movie suggestions. This application not only helps users discover new movies but also provides detailed information on each recommendation, including title, release date, rating, main characters, and posters. The system is powered by cutting-edge machine learning algorithms and integrates seamlessly with The Movie Database (TMDb) API for fetching up-to-date movie details.
+**Cinematic-Genius-Movie-Recommender-System** is a movie recommender system that harnesses the power of content-based filtering techniques to offer personalized movie suggestions. This application not only helps users discover new movies but also provides detailed information on each recommendation, including title, release date, rating, main characters, and posters. The system is powered by cutting-edge machine learning algorithms and integrates seamlessly with The Movie Database (TMDb) API for fetching up-to-date 5000+ movie details.
 
 <img width="1915" height="972" alt="image" src="https://github.com/user-attachments/assets/ae1d74f9-2d55-44d4-a454-53e7a24903c8" />
 
@@ -13,7 +13,7 @@ In addition to its robust recommendation capabilities, Cinematic Genius includes
 ## b) Features
 
 - **Movie Search**: An intuitive search bar that allows users to find movies by title quickly.
-- **Hybrid Recommendation Algorithms**: Combines collaborative filtering and content-based filtering to generate highly accurate and personalized movie recommendations.
+- **Recommendation Algorithms**: Uses content-based filtering to generate highly accurate and personalized movie recommendations.
 - **Detailed Movie Information**: Provides comprehensive details on recommended movies, such as title, release date, rating, main characters, overview, and movie posters.
 - **Responsive UI**: A user-friendly interface built with Streamlit, enabling easy interaction and exploration of movie recommendations.
 
@@ -96,18 +96,9 @@ streamlit run app.py
 - Adjust the background color, text color, style, and font.
 - Toggle between Light Mode and Dark Mode for a preferred visual experience.
 
-## j) File Structure
-- **`app.py`**: The main Streamlit application script.
-- **`movies_metadata.csv`**: Metadata file containing movie details.
-- **`ratings_small.csv`**: Ratings data used for generating recommendations.
-- **`keywords.csv`**: Keywords data used for content-based filtering.
-- **`requirements.txt`**: File listing the project dependencies.
-- **`movie_dict_with_titles.pkl`**: Pickled file containing processed movie data for fast loading.
-
 ## k) Example Output
 
 <img width="805" height="568" alt="image" src="https://github.com/user-attachments/assets/41799ee2-fa08-4e81-9c52-f6e1c0b02dbe" />
-
 
 
 _A screenshot of the application showcasing movie recommendations, detailed movie information, and the customization settings panel._
