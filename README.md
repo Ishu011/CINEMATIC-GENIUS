@@ -11,7 +11,7 @@ In addition to its robust recommendation capabilities, Cinematic Genius includes
 ## DEMO LINK : https://drive.google.com/file/d/18XQwXjBl3CqrpAS88Quzi_8Wcf6I8SjW/view?usp=sharing
 
 ## b) Features
-
+**Model built using cosine similarity on movie metadata**
 - **Movie Search**: An intuitive search bar that allows users to find movies by title quickly.
 - **Recommendation Algorithms**: Uses content-based filtering to generate highly accurate and personalized movie recommendations.
 - **Detailed Movie Information**: Provides comprehensive details on recommended movies, such as title, release date, rating, main characters, overview, and movie posters.
