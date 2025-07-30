@@ -5,6 +5,8 @@
 
 In addition to its robust recommendation capabilities, Cinematic Genius includes extensive customization features, allowing users to personalize the application's appearance to match their preferences. With options to adjust background colors, text colors, fonts, and overall style, users can create a viewing experience that feels uniquely theirs.
 
+## DEMO LINK : https://drive.google.com/file/d/10f8aYUoAyJuYis-icAcGA5iern9BuI6s/view?usp=sharing
+
 ## b) Features
 
 - **Movie Search**: An intuitive search bar that allows users to find movies by title quickly.
